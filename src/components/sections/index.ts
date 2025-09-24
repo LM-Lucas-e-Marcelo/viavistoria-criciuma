@@ -1,0 +1,12 @@
+export { HeroSection } from "./HeroSection";
+export { FeatureCardPrecautionary } from "./FeatureCardPrecautionary";
+export { FeatureCardDetran } from "./FeatureCardDetran";
+export { StepCard } from "./StepCard";
+export { TestimonialCard } from "./TestimonialCard";
+export { ContactForm } from "./ContactForm";
+export { FeaturesSection } from "./FeaturesSection";
+export { FeaturesSectionDetran } from "./FeaturesSectionDetran";
+export { StatsSection } from "./StatsSection";
+export { ProcessSection } from "./ProcessSection";
+export { TestimonialsSection } from "./TestimonialsSection";
+export { ContactSection } from "./ContactSection";
