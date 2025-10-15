@@ -28,7 +28,7 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
       {/* Overlay gradiente */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/70"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/95 to-secondary/80"
       />
       <div
         aria-hidden
@@ -136,27 +136,16 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
           </p>
 
           {/* CTAs com efeitos aprimorados */}
-          <div
-            className={`flex flex-wrap gap-4 pt-2 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-            style={{ transitionDelay: "0.8s" }}
+
+          <a
+            href="https://wa.me/554834333107"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 w-[200px] flex items-center justify-center gap-2 rounded-lg py-3 px-6 font-semibold text-white shadow-xl hover:shadow-2xl hover:shadow-green-500/30 transform hover:scale-105 transition-all duration-300"
           >
-            <a
-              href="https://wa.me/554834333107"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 flex items-center gap-2 rounded-lg py-3 px-6 font-semibold text-white shadow-xl hover:shadow-2xl hover:shadow-green-500/30 transform hover:scale-105 transition-all duration-300"
-            >
-              <FaWhatsapp className="w-5 h-5" />
-              Fale conosco
-            </a>
-            <a
-              href="#servicos"
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 flex items-center gap-2 rounded-lg py-3 px-6 font-semibold text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
-            >
-              Ver Serviços
-              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
-          </div>
+            <FaWhatsapp className="w-5 h-5" />
+            Fale conosco
+          </a>
         </div>
 
         {/* Coluna direita - Card flutuante com stats */}
