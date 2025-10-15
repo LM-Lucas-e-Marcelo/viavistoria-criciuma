@@ -22,41 +22,18 @@ export default function Index() {
     }
   }, []);
 
-  const steps = [
-    {
-      index: 1,
-      title: "Contato",
-      text: "Você envia seus dados e a unidade retorna rapidamente.",
-    },
-    {
-      index: 2,
-      title: "Agendamento",
-      text: "Definimos o melhor horário e local para a vistoria.",
-    },
-    {
-      index: 3,
-      title: "Vistoria",
-      text: "Equipe especializada realiza todos os procedimentos.",
-    },
-    {
-      index: 4,
-      title: "Resultado",
-      text: "Laudo com transparência e validade para sua necessidade.",
-    },
-  ];
-
   const testimonials = [
     {
-      name: "Giovani L.",
-      text: "Atendimento excelente e processo muito rápido. Recomendo a todos!",
+      name: "Guilherme Ivair",
+      text: "atendimento impecável , serviço de qualidade , pessoal que trabalha ali bem atencioso prestativo nota mil",
     },
     {
-      name: "Maria E.",
-      text: "Transparência do início ao fim. Fiquei muito segura com o laudo.",
+      name: "Philipe Veloso",
+      text: "Excelente atendimento e muito ágil! Toda a equipe está de parabéns!",
     },
     {
-      name: "Rafael S.",
-      text: "Consegui agendar no mesmo dia e fui muito bem atendido.",
+      name: "Alex Pirovano",
+      text: "Ótimo atendimento, pessoal educado e bem disposto!!! Parabéns e cautelar muito bem feita inclusive",
     },
   ];
 
@@ -71,7 +48,7 @@ export default function Index() {
       <FeaturesSectionDetran id="servicos-detran" />
 
       <SectionTransition variant="geometric" />
-      <ProcessSection steps={steps} id="como-funciona" />
+      <ProcessSection id="como-funciona" />
 
       <About id="sobre" />
 
@@ -83,7 +60,7 @@ export default function Index() {
       <Contact id="contato" />
 
       <WhatsAppButton
-        phoneNumber="5548999999999"
+        phoneNumber="554834333107"
         message="Olá! Gostaria de saber mais sobre os serviços de vistoria."
       />
     </div>

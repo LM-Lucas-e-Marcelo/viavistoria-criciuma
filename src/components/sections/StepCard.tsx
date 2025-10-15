@@ -10,7 +10,7 @@ export const StepCard = ({ index, title, text, className }: StepCardProps) => {
     <li
       className={`relative rounded-2xl border bg-white p-6 shadow-sm ${className || ""}`}
     >
-      <div className="absolute -top-3 left-6 rounded-full bg-primary px-3 py-1 text-xs font-bold text-white">
+      <div className="absolute -top-3 left-6 rounded-full bg-[#2a4c7f] px-3 py-1 text-xs font-bold text-white">
         {index}
       </div>
       <h3 className="text-base font-semibold text-slate-900">{title}</h3>

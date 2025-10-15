@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, CheckCircle, Star, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
-
+import sticky from "@/assets/sticky-via.png";
 interface HeroSectionProps {
   className?: string;
 }
@@ -15,7 +15,6 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
 
   return (
     <section className={`relative overflow-hidden ${className || ""}`}>
-      {/* Imagem de fundo */}
       <div
         aria-hidden
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -24,7 +23,6 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
         }}
       />
 
-      {/* Gradiente por cima da imagem com menor opacidade */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-emerald-600/60"
@@ -34,7 +32,6 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
         className="absolute inset-0 bg-[radial-gradient(65%_35%_at_50%_0%,rgba(255,255,255,0.15),transparent)]"
       />
 
-      {/* Elementos flutuantes decorativos */}
       <div
         className="absolute top-20 left-10 animate-bounce"
         style={{ animationDuration: "3s" }}
@@ -73,15 +70,14 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
             ajuda a enxergar além do óbvio!
           </p>
 
-          {/* Benefícios em destaque */}
           <div className="mt-6 space-y-3">
             <div className="flex items-center text-white/90">
               <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
-              <span className="text-sm">Laudo em até 24 horas</span>
+              <span className="text-sm">Laudo em até 15 minutos</span>
             </div>
             <div className="flex items-center text-white/90">
               <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
-              <span className="text-sm">99% de precisão nos laudos</span>
+              <span className="text-sm">Laudos precisos e confiáveis</span>
             </div>
             <div className="flex items-center text-white/90">
               <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
@@ -97,18 +93,10 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
               asChild
               className="bg-emerald-500 text-white hover:bg-emerald-500/90 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              <a href="#contato">
+              <a href="https://wa.me/554834333107" target="_blank">
                 <Clock className="h-4 w-4 mr-2" />
                 Agende a sua vistoria
               </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:scale-105 transition-all duration-200 backdrop-blur-sm"
-            >
-              <a href="#servicos">Conheça os serviços</a>
             </Button>
           </div>
         </div>
@@ -120,10 +108,11 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
             <div className="grid h-full place-items-center rounded-xl border border-white/20 bg-gradient-to-br from-white/20 to-white/5">
               <div className="text-center">
                 <div className="relative">
-                  <Shield className="mx-auto h-16 w-16 text-white/90 animate-pulse" />
-                  <div className="absolute -top-2 -right-2 h-6 w-6 bg-emerald-400 rounded-full flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-white" />
-                  </div>
+                  <img
+                    src={sticky}
+                    alt="Sticky"
+                    className="w-32 h-32 mx-auto"
+                  />
                 </div>
                 <p className="mt-4 text-sm font-medium uppercase tracking-wide text-white/80">
                   Via Vistoria

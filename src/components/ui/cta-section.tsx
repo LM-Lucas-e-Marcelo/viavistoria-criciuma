@@ -24,7 +24,7 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
         <div className="mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center rounded-full bg-white/20 px-6 py-3 text-sm font-medium text-white/90 backdrop-blur-sm mb-8">
             <Shield className="h-4 w-4 mr-2" />
-            Mais de 2.500 vistorias realizadas com 99% de precisão
+            Mais de 2.500 vistorias realizadas com precisão
           </div>
 
           <h2 className="text-3xl font-bold tracking-tight text-white md:text-5xl mb-6">
@@ -40,7 +40,9 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="flex items-center justify-center text-white/90">
               <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
-              <span className="text-sm font-medium">Laudo em até 24h</span>
+              <span className="text-sm font-medium">
+                Laudo em até 15 minutos
+              </span>
             </div>
             <div className="flex items-center justify-center text-white/90">
               <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
@@ -59,7 +61,7 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
               asChild
               className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              <a href="#contato">
+              <a href="https://wa.me/554834333107" target="_blank">
                 <Clock className="h-5 w-5 mr-2" />
                 Agendar Vistoria Agora
               </a>
@@ -71,7 +73,7 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
               asChild
               className="border-white/40 bg-white/10 text-white hover:bg-white/20 px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-200 backdrop-blur-sm"
             >
-              <a href="tel:+5548999999999">
+              <a href="tel:+554834333107">
                 <Phone className="h-5 w-5 mr-2" />
                 Ligar Agora
               </a>

@@ -35,7 +35,9 @@ export default function SiteHeader() {
 
         <div className="hidden md:block">
           <Button asChild className="bg-emerald-600 hover:bg-emerald-600/90">
-            <a href="#contato">Agendar vistoria</a>
+            <a href="https://wa.me/554834333107" target="_blank">
+              Agendar vistoria
+            </a>
           </Button>
         </div>
 
@@ -65,7 +67,11 @@ export default function SiteHeader() {
               asChild
               className="mt-2 bg-emerald-600 hover:bg-emerald-600/90"
             >
-              <a href="#contato" onClick={() => setOpen(false)}>
+              <a
+                href="https://wa.me/554834333107"
+                target="_blank"
+                onClick={() => setOpen(false)}
+              >
                 Agendar vistoria
               </a>
             </Button>

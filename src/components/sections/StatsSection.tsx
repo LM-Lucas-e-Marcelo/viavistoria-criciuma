@@ -104,7 +104,7 @@ export const StatsSection = ({ className, id }: StatsSectionProps) => {
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      number: 99,
+      number: 100,
       suffix: "%",
       label: "Precisão nos Laudos",
       delay: 400,
