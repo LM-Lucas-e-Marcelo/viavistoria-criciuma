@@ -6,6 +6,7 @@ import {
   StatsSection,
   ProcessSection,
   TestimonialsSection,
+  VideoSection,
 } from "@/components/sections";
 import { Contact } from "@/components/sections/contact";
 import { About } from "@/components/sections/about";
@@ -49,6 +50,8 @@ export default function Index() {
 
       <SectionTransition variant="geometric" />
       <ProcessSection id="como-funciona" />
+
+      <VideoSection id="video" />
 
       <About id="sobre" />
 

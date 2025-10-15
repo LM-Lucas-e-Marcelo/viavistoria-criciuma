@@ -10,3 +10,4 @@ export { StatsSection } from "./StatsSection";
 export { ProcessSection } from "./ProcessSection";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { ContactSection } from "./ContactSection";
+export { VideoSection } from "./VideoSection";
