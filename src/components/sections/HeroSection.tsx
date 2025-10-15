@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Shield, CheckCircle, Star, Clock } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 import sticky from "@/assets/sticky-via.png";
 import { FaWhatsapp } from "react-icons/fa";
@@ -20,13 +19,13 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
         aria-hidden
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/vistoria.png')",
+          backgroundImage: "url('/vistoria.webp')",
         }}
       />
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-secondary/60"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-secondary/70"
       />
       <div
         aria-hidden
