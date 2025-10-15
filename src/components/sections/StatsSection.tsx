@@ -111,8 +111,8 @@ export const StatsSection = ({ className, id }: StatsSectionProps) => {
     },
     {
       icon: <Clock className="h-8 w-8" />,
-      number: 24,
-      suffix: "h",
+      number: 15,
+      suffix: " Minutos",
       label: "Tempo Médio de Entrega",
       delay: 600,
     },

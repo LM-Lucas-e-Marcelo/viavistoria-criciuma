@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Shield, CheckCircle, Star, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
 import sticky from "@/assets/sticky-via.png";
+import { FaWhatsapp } from "react-icons/fa";
 interface HeroSectionProps {
   className?: string;
 }
@@ -56,7 +57,7 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
           className={`text-white transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur-sm mb-6">
-            <Star className="h-4 w-4 mr-2 text-yellow-300" />
+            <img src={sticky} alt="Sticky" className="w-12 h-12 mr-2" />
             Mais de 2.500 vistorias realizadas
           </div>
 
@@ -88,48 +89,14 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button
-              size="lg"
-              asChild
-              className="bg-secondary text-white hover:bg-secondary/90 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            <a
+              href="https://wa.me/554834333107"
+              target="_blank"
+              className="bg-green-500 flex items-center gap-2 rounded-md py-2 px-6"
             >
-              <a href="https://wa.me/554834333107" target="_blank">
-                <Clock className="h-4 w-4 mr-2" />
-                Agende a sua vistoria
-              </a>
-            </Button>
-          </div>
-        </div>
-
-        <div
-          className={`relative transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
-        >
-          <div className="mx-auto aspect-[4/3] w-full max-w-md rounded-2xl border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-lg md:max-w-lg hover:scale-105 transition-transform duration-300">
-            <div className="grid h-full place-items-center rounded-xl border border-white/20 bg-gradient-to-br from-white/20 to-white/5">
-              <div className="text-center">
-                <div className="relative">
-                  <img
-                    src={sticky}
-                    alt="Sticky"
-                    className="w-32 h-32 mx-auto"
-                  />
-                </div>
-                <p className="mt-4 text-sm font-medium uppercase tracking-wide text-white/80">
-                  Via Vistoria
-                </p>
-                <p className="mt-2 text-2xl font-bold text-white">
-                  Segurança e transparência
-                </p>
-                <div className="mt-4 flex justify-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-4 w-4 text-yellow-300 fill-current"
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
+              <FaWhatsapp className="w-5 h-5 mt-[-2px]" />
+              Fale conosco
+            </a>
           </div>
         </div>
       </div>
