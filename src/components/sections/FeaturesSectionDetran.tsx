@@ -13,13 +13,13 @@ export const FeaturesSectionDetran = ({
   return (
     <section
       id={id}
-      className={`bg-gradient-to-br from-blue-50/30 via-white to-emerald-50/20 py-16 md:py-24 relative overflow-hidden ${className || ""}`}
+      className={`bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20 py-16 md:py-24 relative overflow-hidden ${className || ""}`}
     >
       {/* Background animado */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[length:40px_40px] animate-pulse"></div>
         <div
-          className="absolute top-20 left-20 w-20 h-20 bg-emerald-500/10 rounded-full animate-bounce"
+          className="absolute top-20 left-20 w-20 h-20 bg-secondary/10 rounded-full animate-bounce"
           style={{ animationDuration: "7s" }}
         ></div>
         <div

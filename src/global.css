@@ -24,13 +24,13 @@
     --primary: 216 50% 33%; /* #2a4c7f - Via Vistoria azul */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 150 100% 29%; /* Verde institucional */
+    --secondary: 216 43% 47%; /* #436caa - Azul secondary */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 142 70% 49%; /* Tom WhatsApp/CTA */
+    --accent: 216 50% 60%; /* Tom azul claro para accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;

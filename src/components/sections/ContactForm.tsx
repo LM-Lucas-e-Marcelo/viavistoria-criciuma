@@ -104,7 +104,7 @@ export const ContactForm = ({
           </div>
           <Button
             type="submit"
-            className="h-11 bg-emerald-600 text-white hover:bg-emerald-600/90"
+            className="h-11 bg-secondary text-white hover:bg-secondary/90"
           >
             Enviar
           </Button>

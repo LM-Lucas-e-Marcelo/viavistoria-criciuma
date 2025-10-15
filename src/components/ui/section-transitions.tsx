@@ -62,8 +62,8 @@ export const AnimatedBackground = ({
         return (
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute -inset-10 opacity-30">
-              <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-              <div className="absolute top-0 -right-4 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+              <div className="absolute top-0 -left-4 w-72 h-72 bg-primary/40 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
+              <div className="absolute top-0 -right-4 w-72 h-72 bg-secondary/40 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
               <div className="absolute -bottom-8 left-20 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export const AnimatedBackground = ({
               style={{ animationDuration: "3s" }}
             ></div>
             <div
-              className="absolute top-20 right-20 w-16 h-16 bg-emerald-500/10 rounded-full animate-bounce"
+              className="absolute top-20 right-20 w-16 h-16 bg-secondary/10 rounded-full animate-bounce"
               style={{ animationDuration: "4s", animationDelay: "1s" }}
             ></div>
             <div
@@ -133,7 +133,7 @@ export const SectionTransition = ({
 
       case "dots":
         return (
-          <div className="h-20 w-full bg-gradient-to-r from-blue-50/30 via-transparent to-emerald-50/30">
+          <div className="h-20 w-full bg-gradient-to-r from-blue-50/30 via-transparent to-blue-50/30">
             <div className="h-full bg-[radial-gradient(circle_at_1px_1px,rgba(59,130,246,0.1)_1px,transparent_0)] bg-[length:30px_30px]"></div>
           </div>
         );
@@ -147,16 +147,16 @@ export const SectionTransition = ({
 
       case "gradient":
         return (
-          <div className="h-20 w-full bg-gradient-to-r from-primary/5 via-emerald-500/5 to-primary/5">
+          <div className="h-20 w-full bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5">
             <div className="h-full bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
           </div>
         );
 
       case "geometric":
         return (
-          <div className="h-20 w-full bg-gradient-to-r from-blue-50/20 via-white to-emerald-50/20 relative overflow-hidden">
+          <div className="h-20 w-full bg-gradient-to-r from-blue-50/20 via-white to-blue-50/20 relative overflow-hidden">
             <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-primary/10 rounded-full transform -translate-y-1/2"></div>
-            <div className="absolute top-1/2 right-1/4 w-6 h-6 bg-emerald-500/10 rounded-full transform -translate-y-1/2"></div>
+            <div className="absolute top-1/2 right-1/4 w-6 h-6 bg-secondary/10 rounded-full transform -translate-y-1/2"></div>
             <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-blue-500/10 rounded-full transform -translate-y-1/2 -translate-x-1/2"></div>
           </div>
         );

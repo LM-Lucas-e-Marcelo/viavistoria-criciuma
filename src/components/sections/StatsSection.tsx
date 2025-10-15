@@ -65,8 +65,8 @@ const StatItem = ({
       id={`stat-${label.replace(/\s+/g, "-").toLowerCase()}`}
       className="text-center group"
     >
-      <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
-        <div className="text-primary group-hover:text-emerald-600 transition-colors duration-300">
+      <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:scale-110 transition-transform duration-300">
+        <div className="text-primary group-hover:text-secondary transition-colors duration-300">
           {icon}
         </div>
       </div>
@@ -126,8 +126,8 @@ export const StatsSection = ({ className, id }: StatsSectionProps) => {
       {/* Background animado */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -inset-10 opacity-20">
-          <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-          <div className="absolute top-0 -right-4 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+          <div className="absolute top-0 -left-4 w-72 h-72 bg-primary/40 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-secondary/40 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
           <div className="absolute -bottom-8 left-20 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
         </div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(59,130,246,0.1)_1px,transparent_0)] bg-[length:30px_30px] animate-pulse"></div>

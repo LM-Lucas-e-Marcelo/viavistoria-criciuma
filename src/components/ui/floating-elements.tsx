@@ -87,7 +87,7 @@ export const FloatingDecorations = () => {
         className="absolute top-40 right-20 animate-bounce"
         style={{ animationDuration: "3s" }}
       >
-        <div className="h-3 w-3 bg-emerald-400/20 rounded-full"></div>
+        <div className="h-3 w-3 bg-secondary/30 rounded-full"></div>
       </div>
       <div
         className="absolute bottom-40 left-20 animate-ping"

@@ -10,7 +10,7 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
   return (
     <section
       id={id}
-      className={`py-16 md:py-24 bg-gradient-to-br from-primary via-primary/90 to-emerald-600 relative overflow-hidden ${className || ""}`}
+      className={`py-16 md:py-24 bg-gradient-to-br from-primary via-primary/90 to-secondary relative overflow-hidden ${className || ""}`}
     >
       {/* Elementos decorativos */}
       <div className="absolute inset-0 bg-[radial-gradient(65%_35%_at_50%_0%,rgba(255,255,255,0.15),transparent)]" />
@@ -39,17 +39,17 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
           {/* Benefícios em destaque */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="flex items-center justify-center text-white/90">
-              <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
+              <CheckCircle className="h-5 w-5 mr-3 text-white/80" />
               <span className="text-sm font-medium">
                 Laudo em até 15 minutos
               </span>
             </div>
             <div className="flex items-center justify-center text-white/90">
-              <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
+              <CheckCircle className="h-5 w-5 mr-3 text-white/80" />
               <span className="text-sm font-medium">Equipe certificada</span>
             </div>
             <div className="flex items-center justify-center text-white/90">
-              <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
+              <CheckCircle className="h-5 w-5 mr-3 text-white/80" />
               <span className="text-sm font-medium">Garantia de precisão</span>
             </div>
           </div>
@@ -59,23 +59,10 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
             <Button
               size="lg"
               asChild
-              className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               <a href="https://wa.me/554834333107" target="_blank">
-                <Clock className="h-5 w-5 mr-2" />
-                Agendar Vistoria Agora
-              </a>
-            </Button>
-
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-white/40 bg-white/10 text-white hover:bg-white/20 px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-200 backdrop-blur-sm"
-            >
-              <a href="tel:+554834333107">
-                <Phone className="h-5 w-5 mr-2" />
-                Ligar Agora
+                Fale conosco agora!
               </a>
             </Button>
           </div>
@@ -87,7 +74,7 @@ export const CTASection = ({ className, id }: CTASectionProps) => {
                 {[...Array(5)].map((_, i) => (
                   <div
                     key={i}
-                    className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"
+                    className="w-2 h-2 bg-white/60 rounded-full animate-pulse"
                     style={{ animationDelay: `${i * 0.2}s` }}
                   />
                 ))}

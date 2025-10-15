@@ -34,7 +34,7 @@ export default function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <Button asChild className="bg-emerald-600 hover:bg-emerald-600/90">
+          <Button asChild className="bg-secondary hover:bg-secondary/90">
             <a href="https://wa.me/554834333107" target="_blank">
               Agendar vistoria
             </a>
@@ -63,10 +63,7 @@ export default function SiteHeader() {
                 {item.label}
               </a>
             ))}
-            <Button
-              asChild
-              className="mt-2 bg-emerald-600 hover:bg-emerald-600/90"
-            >
+            <Button asChild className="mt-2 bg-secondary hover:bg-secondary/90">
               <a
                 href="https://wa.me/554834333107"
                 target="_blank"

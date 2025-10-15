@@ -25,7 +25,7 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-emerald-600/60"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-secondary/60"
       />
       <div
         aria-hidden
@@ -72,15 +72,15 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
 
           <div className="mt-6 space-y-3">
             <div className="flex items-center text-white/90">
-              <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
+              <CheckCircle className="h-5 w-5 mr-3 text-white/80" />
               <span className="text-sm">Laudo em até 15 minutos</span>
             </div>
             <div className="flex items-center text-white/90">
-              <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
+              <CheckCircle className="h-5 w-5 mr-3 text-white/80" />
               <span className="text-sm">Laudos precisos e confiáveis</span>
             </div>
             <div className="flex items-center text-white/90">
-              <CheckCircle className="h-5 w-5 mr-3 text-emerald-300" />
+              <CheckCircle className="h-5 w-5 mr-3 text-white/80" />
               <span className="text-sm">
                 Equipe especializada e certificada
               </span>
@@ -91,7 +91,7 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
             <Button
               size="lg"
               asChild
-              className="bg-emerald-500 text-white hover:bg-emerald-500/90 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-secondary text-white hover:bg-secondary/90 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               <a href="https://wa.me/554834333107" target="_blank">
                 <Clock className="h-4 w-4 mr-2" />

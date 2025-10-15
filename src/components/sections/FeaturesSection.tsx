@@ -20,7 +20,7 @@ export const FeaturesSection = ({ className, id }: FeaturesSectionProps) => {
           style={{ animationDuration: "6s" }}
         ></div>
         <div
-          className="absolute bottom-10 left-10 w-24 h-24 bg-emerald-500/5 rounded-full animate-bounce"
+          className="absolute bottom-10 left-10 w-24 h-24 bg-secondary/5 rounded-full animate-bounce"
           style={{ animationDuration: "8s", animationDelay: "2s" }}
         ></div>
       </div>

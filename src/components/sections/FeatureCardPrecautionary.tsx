@@ -28,7 +28,7 @@ export const FeatureCardPrecautionary = ({
     <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-zinc-200/40 to-zinc-200/20 overflow-hidden h-full">
       <CardContent className="p-8 h-full flex flex-col">
         <div className="flex-1">
-          <div className="w-16 h-16 bg-gradient-to-br from-primary via-primary to-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <div className="w-16 h-16 bg-gradient-to-br from-primary via-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <div className="text-white">{icon}</div>
           </div>
           <h3 className="text-xl font-bold text-primary mb-4">{title}</h3>
